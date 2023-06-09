@@ -1,3 +1,21 @@
+@media only screen and (max-width:800px) {
+
+    /* For tablets: */
+    .resume {
+        padding: 40px 15px 0px 15px !important;
+    }
+
+}
+
+@media only screen and (max-width:500px) {
+
+    /* For Mobile Phones */
+    .resume {
+        padding: 40px 15px 0px 15px !important;
+    }
+
+}
+
 body {
     text-align: center;
     margin: 0;
@@ -22,8 +40,8 @@ h1 {
 hr.rounded {
     border-top: 4px solid #bbb;
     border-radius: 5px;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .mountains img {
@@ -35,7 +53,7 @@ hr.rounded {
 
 .resume {
     text-align: left;
-    padding: 20px 20% 0 20%;
+    padding: 20px 30% 0 25%;
 }
 
 .location {
@@ -145,14 +163,6 @@ img {
         opacity: 1
     }
 }
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-    .text {
-        font-size: 11px
-    }
-}
-
 
 /* End of Slideshow */
 
