@@ -1,6 +1,10 @@
 @media only screen and (max-width:800px) {
 
     /* For tablets: */
+    body {
+        min-width: 960px;
+    }
+
     .resume {
         padding: 40px 15px 0px 15px !important;
     }
@@ -10,6 +14,10 @@
 @media only screen and (max-width:360px) {
 
     /* For Mobile Phones */
+    body {
+        min-width: 960px;
+    }
+
     .resume {
         padding: 40px 15px 0px 15px !important;
     }
