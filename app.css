@@ -55,7 +55,9 @@ hr.rounded {
 
 .resume {
     text-align: left;
-    padding: 20px 30% 0 25%;
+    padding: 20px;
+    padding-left: 30%;
+    padding-right: 25%;
 }
 
 .location {
