@@ -25,6 +25,12 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+#name {
+    padding: 10px;
+    height: 100px;
+    width: 600px;
+}
+
 p {
     margin: 5px 10px 10px 0;
     padding: 0;
