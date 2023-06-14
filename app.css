@@ -1,166 +1,55 @@
-@media only screen and (min-width:800px) and (max-width:1024px) {
-
-    /* For tablets: */
-    .resume {
-        padding: 40px 15px 0px 15px !important;
-    }
-
-    .column {
-        flex: 50% !important;
-        max-width: 50% !important;
-    }
-
-    #name {
-        width: 50% !important;
-        height: auto !important;
-    }
-
-}
-
-@media only screen and (min-width:240px) and (max-width:799px) {
-
-    /* For Mobile Phones */
-    .resume {
-        padding: 40px 15px 0px 15px !important;
-    }
-
-    .column {
-        flex: 100% !important;
-        max-width: 100% !important;
-    }
-
-    #name {
-        width: 100% !important;
-        height: auto !important;
-    }
-
-}
-
-
-
-body {
-    text-align: center;
-    margin: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(255, 255, 255);
-}
-
-#name {
-    padding: 10px;
-    height: 100px;
-    width: 600px;
-}
-
-p {
-    margin: 5px 10px 10px 0;
-    padding: 0;
-}
-
-h1 {
-    color: rgb(1, 5, 1);
-
-}
-
-.name {
-    margin: 0;
-}
-
-hr.rounded {
-    border-top: 5px solid #bbb;
-    border-radius: 5px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.mountains img {
-    object-fit: cover;
-    width: 100%;
-    height: 400px;
-    margin: 0 auto;
-}
-
-.resume {
-    text-align: left;
-    padding: 20px;
-    padding-left: 30%;
-    padding-right: 25%;
-}
-
-.location {
-    font-weight: bold;
-    margin-top: 20px;
-    margin-bottom: 0;
-}
-
-.date {
-    font-size: small;
-    font-style: italic;
-    font-weight: bold;
-    margin-bottom: 0;
-}
-
-.bulletpoints li {
-    list-style-type: circle;
-    margin-left: 5px;
-    padding: 0px 0px 3px 0px;
-}
-
-.shippedTitles {
-    text-align: center;
-    padding: 20px 20% 0 20%;
-}
-
-/* ---------------------------------- */
-/* --------- Image Slideshow ---------*/
 * {
     box-sizing: border-box;
 }
 
-body {
-    margin: 0;
-    font-family: Arial;
+.header {
+    padding: 30px;
+    height: 300px;
+    background-color: #cccccc;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.952)), url('images/mountains.jpg');
+    background-position: center;
+    background-size: cover;
 }
 
-.header {
-    text-align: center;
-    padding: 32px;
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+
+}
+
+#name {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#resume-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.main {
+    padding: 5%;
 }
 
 .row {
     display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+    flex-direction: row;
 }
 
-/* Create four equal columns that sits next to each other */
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-}
-
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
-}
-
-
-
-/* End of Slideshow */
-
-
-
-
-
-.contact {
+h2 {
     text-align: center;
 }
 
+img {
+    border-radius: 20%;
+}
 
 
-/* --------------------------------- */
-/* -------- Contact Me Form -------- */
-
+/* Contact Me Form */
 input {
     width: 50%;
     padding: 12px 20px;
@@ -184,11 +73,71 @@ button {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-footer {
-    background-color: rgba(0, 128, 0, 0.274);
-    width: 100%;
-    height: 100px;
+#contactMe {
     text-align: center;
-    padding: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+/* Mobile -- removing side panels */
+@media all and (min-width: 320px) {
+    #name {
+        width: 100%;
+    }
+
+    #resume-img {
+        width: 25%;
+    }
+
+    .left-side {
+        flex: 0%;
+    }
+
+    .right-side {
+        flex: 0%;
+    }
+}
+
+/* Desktop */
+@media all and (min-width: 800px) {
+
+    #name {
+        width: auto;
+    }
+
+    #resume-img {
+        width: auto;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    .left-side {
+        margin-top: -10%;
+        flex: 25%;
+        padding: 5%;
+    }
+
+    .main {
+        flex: 50%;
+        padding: 0;
+    }
+
+    .right-side {
+        margin-top: -10%;
+        flex: 25%;
+        padding: 5%;
+    }
+
+    #contactMe {
+        text-align: center;
+    }
+
+    .mobile-images {
+        display: none;
+    }
 }
