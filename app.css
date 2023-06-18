@@ -31,6 +31,22 @@ body {
     width: 50%;
 }
 
+.social-links {
+    text-align: center;
+}
+
+#image-social-links {
+    height: 45px;
+    width: 45px;
+    border-radius: 0;
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+a.image-social-link:hover {
+    cursor: pointer;
+}
+
 .main {
     padding: 5%;
 }
