@@ -100,25 +100,23 @@ button {
 
 
 /* Portfolio Page */
-.portfolio-body {
+.portfolio-row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
 
-.portfolio-flex-container {
+.portfolio-column {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
 }
 
-#portfolio-img {
+.portfolio-column img {
     margin-top: 8px;
     vertical-align: middle;
-    border-radius: 0;
-    width: 100%
+    border-radius: 0%;
 }
-
 
 
 
@@ -141,6 +139,12 @@ button {
     .right-side {
         flex: 0%;
     }
+
+    .portfolio-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
 }
 
 /* Desktop */
@@ -182,4 +186,7 @@ button {
     .mobile-images {
         display: none;
     }
+
+    
+
 }
