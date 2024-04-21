@@ -18,7 +18,13 @@ h1 {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+}
 
+.nav button {
+    margin-left: 10px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(1, 39, 1, 0.651);
 }
 
 #name {
@@ -64,10 +70,6 @@ h2 {
     text-align: center;
 }
 
-img {
-    border-radius: 50px;
-}
-
 
 /* Contact Me Form */
 input {
@@ -85,7 +87,7 @@ textarea {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-button {
+form button {
     width: 50%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -141,8 +143,8 @@ button {
     }
 
     .portfolio-column {
-        flex: 100%;
-        max-width: 100%;
+        flex: 50%;
+        max-width: 50%;
     }
 
 }
@@ -186,7 +188,4 @@ button {
     .mobile-images {
         display: none;
     }
-
-    
-
 }
