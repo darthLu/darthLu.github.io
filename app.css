@@ -11,6 +11,10 @@
     background-size: cover;
 }
 
+h1 {
+    text-align: center;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
@@ -91,6 +95,28 @@ button {
 
 #contactMe {
     text-align: center;
+}
+
+
+
+/* Portfolio Page */
+.portfolio-body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.portfolio-flex-container {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+#portfolio-img {
+    margin-top: 8px;
+    vertical-align: middle;
+    border-radius: 0;
+    width: 100%
 }
 
 
