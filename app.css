@@ -63,6 +63,12 @@ body {
     text-align: center;
 }
 
+img {
+    border-radius: 25px;
+}
+
+
+
 #image-social-links {
     height: 45px;
     width: 45px;
