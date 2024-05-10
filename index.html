@@ -7,171 +7,202 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url('/images/photography/me.jpg');
-  min-height: 100%;
-}
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif
+  }
+
+  .w3-row-padding img {
+    margin-bottom: 12px
+  }
+
+  .bgimg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('/images/photography/me.jpg');
+    min-height: 100%;
+  }
 </style>
+
 <body>
 
-<!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
-  <div class="bgimg"></div>
-</nav>
+  <!-- Sidebar with image -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+    <div class="bgimg"></div>
+  </nav>
 
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
-    <i class="fa fa-remove"></i>
-  </a>
-  <div class="w3-bar-block w3-center">
-    <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
-    <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
-  </div>
-</nav>
-
-<!-- Page Content -->
-<div class="w3-main w3-padding-large" style="margin-left:40%">
-
-  <!-- Menu icon to open sidebar -->
-  <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
-
-  <!-- Header -->
-  <header class="w3-container w3-center" style="padding:128px 16px" id="home">
-    <h1 class="w3-jumbo"><b>Lindsey Wade Barnard</b></h1>
-    <p>Quality Assurance Engineer and <i>new</i> Photographer</p>
-    <img src="/images/photography/me.jpg" class="w3-image w3-hide-large w3-hide-small w3-round" style="display:block;width:60%;margin:auto;">
-    <img src="/images/photography/me.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000" height="1333">
-    <a href="resume.html">
-    <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
-      <i class="fa fa-download"></i> Resume
-    </button></a>
-  </header>
-
-  <!-- Portfolio Section -->
-  <div class="w3-padding-32 w3-content" id="portfolio">
-    <h2 class="w3-text-grey">My Portfolio</h2>
-    <hr class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/images/photography/jake.jpg" style="width:100%">
-        <img src="/images/photography/jemma1.jpg" style="width:100%">
-        <img src="/images/photography/canvas.jpg" style="width:100%">
-        <img src="/images/photography/phone.jpg" style="width:100%">
-        <img src="/images/photography/eric.jpg" style="width: 100%;">
-        <img src="/images/photography/whiteflowers.jpg" style="width: 100%;">
-        <img src="/images/photography/bike.jpg" style="width: 100%;">
-      </div>
-
-      <div class="w3-half">
-        <img src="/images/photography/jakeeye.jpg" style="width:100%">
-        <img src="/images/photography/jemma2.JPG" style="width:100%">
-        <img src="/images/photography/pinkwhiteflower.JPG" style="width:100%">
-        <img src="/images/photography/purpleflower.JPG" style="width:100%">
-        <img src="/images/photography/rose.JPG" style="width:100%">
-        <img src="/images/photography/rainyrose.JPG" style="width:100%">
-        <img src="/images/photography/yellowflowers.jpg" style="width: 100%;">
-        <img src="/images/photography/moss.jpg" style="width: 100%;">
-      </div>
-    <!-- End photo grid -->
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2"
+    id="mySidebar">
+    <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright"
+      style="padding:0 12px;">
+      <i class="fa fa-remove"></i>
+    </a>
+    <div class="w3-bar-block w3-center">
+      <a href="#" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+      <a href="#portfolio" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Portfolio</a>
+      <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
     </div>
-  <!-- End Portfolio Section -->
-  </div>
+  </nav>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
-    <h2>About</h2>
-    <hr class="w3-opacity">
-    <p>Born and raised in Lilburn, GA, nestled near Stone Mountain, Lindsey has carried the spirit of her hometown with her throughout her journey. 
-        Graduating college in 2018 was a significant milestone, made even more special with her two-year-old son cheering her on. Armed with a 
-        Bachelor's degree in Software Development, she embarked on a fulfilling career journey, starting with an internship at Adult Swim Games 
-        during her college years. The transition from intern to full-time employee seamlessly occurred the Monday after her graduation, a 
-        testament to her dedication and skills. This career path evolved into a Lead Quality Assurance position at Blue Mammoth Games, where Lindsey
+  <!-- Page Content -->
+  <div class="w3-main w3-padding-large" style="margin-left:40%">
+
+    <!-- Menu icon to open sidebar -->
+    <span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;"
+      onclick="openNav()"><i class="fa fa-bars"></i></span>
+
+    <!-- Header -->
+    <header class="w3-container w3-center" style="padding:128px 16px" id="home">
+      <h1 class="w3-jumbo"><b>Lindsey Wade Barnard</b></h1>
+      <p>Quality Assurance Engineer and <i>new</i> Photographer</p>
+      <img src="/images/photography/me.jpg" class="w3-image w3-hide-large w3-hide-small w3-round"
+        style="display:block;width:60%;margin:auto;">
+      <img src="/images/photography/me.jpg" class="w3-image w3-hide-large w3-hide-medium w3-round" width="1000"
+        height="1333">
+      <a href="resume.html">
+        <button class="w3-button w3-light-grey w3-padding-large w3-margin-top">
+          <i class="fa fa-download"></i> Resume
+        </button></a>
+    </header>
+
+    <!-- Portfolio Section -->
+    <div class="w3-padding-32 w3-content" id="portfolio">
+      <h2 class="w3-text-grey">My Portfolio</h2>
+      <hr class="w3-opacity">
+
+      <!-- Grid for photos -->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half">
+          <img src="/images/photography/jake.jpg" style="width:100%">
+          <img src="/images/photography/jemma1.jpg" style="width:100%">
+          <img src="/images/photography/canvas.jpg" style="width:100%">
+          <img src="/images/photography/phone.jpg" style="width:100%">
+          <img src="/images/photography/eric.jpg" style="width: 100%;">
+          <img src="/images/photography/whiteflowers.jpg" style="width: 100%;">
+          <img src="/images/photography/bike.jpg" style="width: 100%;">
+        </div>
+
+        <div class="w3-half">
+          <img src="/images/photography/jakeeye.jpg" style="width:100%">
+          <img src="/images/photography/jemma2.JPG" style="width:100%">
+          <img src="/images/photography/pinkwhiteflower.JPG" style="width:100%">
+          <img src="/images/photography/purpleflower.JPG" style="width:100%">
+          <img src="/images/photography/rose.JPG" style="width:100%">
+          <img src="/images/photography/rainyrose.JPG" style="width:100%">
+          <img src="/images/photography/yellowflowers.jpg" style="width: 100%;">
+          <img src="/images/photography/moss.jpg" style="width: 100%;">
+        </div>
+        <!-- End photo grid -->
+      </div>
+      <!-- End Portfolio Section -->
+    </div>
+
+    <!-- About Section -->
+    <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+      <h2>About</h2>
+      <hr class="w3-opacity">
+      <p>Born and raised in Lilburn, GA, nestled near Stone Mountain, Lindsey has carried the spirit of her hometown
+        with her throughout her journey.
+        Graduating college in 2018 was a significant milestone, made even more special with her son cheering her on.
+        Armed with a
+        Bachelor's degree in Software Development, she embarked on a fulfilling career journey, starting with an
+        internship at Adult Swim Games
+        during her college years. The transition from intern to full-time employee seamlessly occurred the Monday after
+        her graduation, a
+        testament to her dedication and skills. This career path evolved into a Lead Quality Assurance position at Blue
+        Mammoth Games, where Lindsey
         currently works.
         <br><br>
-        Beyond the realm of software development, Lindsey embraces a diverse range of interests and hobbies. From capturing moments through photography 
-        to the meditative art of crocheting, her creative side finds expression in various forms. Her love for challenges is evident in her 
-        enjoyment of Sudoku puzzles, while the thrill of outdoor adventures beckons Lindsey to mountain bike and ride motorcycles. Basking in the warmth 
-        of the sun, playing with her dogs, immersing herself in video games, and delving into captivating reads are among the simple joys that 
+        Beyond the realm of software development, Lindsey embraces a diverse range of interests and hobbies. From
+        capturing moments through photography
+        to the meditative art of crocheting, her creative side finds expression in various forms. Her love for
+        challenges is evident in her
+        enjoyment of Sudoku puzzles, while the thrill of outdoor adventures beckons Lindsey to mountain bike and ride
+        motorcycles. Basking in the warmth
+        of the sun, playing with her dogs, immersing herself in video games, and delving into captivating reads are
+        among the simple joys that
         enrich Lindsey's life.
         <br><br>
-        Guided by the timeless principle of treating others with the same respect and kindness she seeks, Lindsey navigates life with empathy and integrity. 
-        As she look towards the future, her aspirations and dreams are waiting to unfold, each step forward guided by her values and fueled by her 
+        Guided by the timeless principle of treating others with the same respect and kindness she seeks, Lindsey
+        navigates life with empathy and integrity.
+        As she look towards the future, her aspirations and dreams are waiting to unfold, each step forward guided by
+        her values and fueled by her
         passions.
-    </p>
-    <h3 class="w3-padding-16">My Skills</h3>
-    <p class="w3-wide">Quality Assurance</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+      </p>
+      <h3 class="w3-padding-16">My Skills</h3>
+      <p class="w3-wide">Quality Assurance</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:95%">95%</div>
+      </div>
+      <p class="w3-wide">Web Design</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">80%</div>
+      </div>
+      <p class="w3-wide">Photography</p>
+      <div class="w3-light-grey">
+        <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">75%</div>
+      </div><br>
+
+      <!-- End About Section -->
     </div>
-    <p class="w3-wide">Web Design</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:85%">80%</div>
+
+    <!-- Contact Section -->
+    <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
+      <h2>Contact Me</h2>
+      <hr class="w3-opacity">
+
+      <div class="w3-section">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Loganville, GA</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: lindsey.wade@me.com</p>
+      </div>
+
+      <!-- Image of location/map -->
+      <img src="/images/map.png" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
+
+      <p>Lets get in touch. Send me a message:</p>
+      <form method="post"
+        action="https://script.google.com/macros/s/AKfycbxR6XGltB4FifpTa5PQOkkz8QXvYCeb2p5DtHcDxp09_hj0_neufdoP78P2pw7W_MPKuw/exec"
+        id="contactMe">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message">
+        </p>
+        <p>
+          <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+
+
+      <!-- End Contact Section -->
     </div>
-    <p class="w3-wide">Photography</p>
-    <div class="w3-light-grey">
-      <div class="w3-container w3-center w3-padding-small w3-dark-grey" style="width:80%">75%</div>
-    </div><br>
-    
-  <!-- End About Section -->
+
+
+
+    <!-- END PAGE CONTENT -->
   </div>
 
-  <!-- Contact Section -->
-  <div class="w3-padding-32 w3-content w3-text-grey" id="contact" style="margin-bottom:64px">
-    <h2>Contact Me</h2>
-    <hr class="w3-opacity">
+  <script>
+    // Open and close sidebar
+    function openNav() {
+      document.getElementById("mySidebar").style.width = "60%";
+      document.getElementById("mySidebar").style.display = "block";
+    }
 
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Loganville, GA</p>
-      <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: lindsey.wade@me.com</p>
-    </div>
-    
-    <!-- Image of location/map -->
-    <img src="/images/map.png" class="w3-image w3-greyscale" style="width:100%;margin:32px 0">
-   
-    <p>Lets get in touch. Send me a message:</p>
-    <form method="post"
-    action="https://script.google.com/macros/s/AKfycbxR6XGltB4FifpTa5PQOkkz8QXvYCeb2p5DtHcDxp09_hj0_neufdoP78P2pw7W_MPKuw/exec"
-    id="contactMe">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-
-
-  <!-- End Contact Section -->
-  </div>  
-  
-
-  
-<!-- END PAGE CONTENT -->
-</div>
-
-<script>
-// Open and close sidebar
-function openNav() {
-  document.getElementById("mySidebar").style.width = "60%";
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function closeNav() {
-  document.getElementById("mySidebar").style.display = "none";
-}
-</script>
+    function closeNav() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+  </script>
 
 </body>
+
 </html>
